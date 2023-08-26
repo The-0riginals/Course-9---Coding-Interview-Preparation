@@ -1,3 +1,6 @@
+### Basic data structures
+<img src="./Assets/data-structures.png">
+
 __optimizing your code:__
 - To optimize space complexity, you may opt for a solution that does in-place changes over creating a new data structure to house the result
 - Avoid excessive compiler calls. If you are searching for a value in an array, terminate the loop when the item is found. 
@@ -25,6 +28,6 @@ ROM is busiest when the computer starts and information on the required applicat
 - Secondary memory is non-volatile, meaning that it is retained when the computer is turned off.
 
 __Binary:__  
-<img src="./assets/binary_Picture-1.png">
-<img src="./assets/binary_Picture-2.png">
+<img src="./Assets/binary_Picture-1.png">
+<img src="./Assets/binary_Picture-2.png">
 
