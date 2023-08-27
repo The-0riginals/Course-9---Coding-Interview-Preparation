@@ -1,3 +1,9 @@
+# Coding Interview Preparation
+
+## This directory contains all of my assignments from the Coursera's Course: [Coding-Interview-Preparation](https://www.coursera.org/learn/coding-interview-preparation)
+
+
+## Notes:
 
 __optimizing your code:__
 - To optimize space complexity, you may opt for a solution that does in-place changes over creating a new data structure to house the result
@@ -124,3 +130,58 @@ ex: knapsack problem, traveling salesman problem, longest common subsequence, lo
 
 __greedy algorithms:__  
 `Greedy algorithms` are algorithms that make the locally optimal choice at each step. The choice made by a greedy algorithm may depend on choices made so far, but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one. In other words, a greedy algorithm never reconsiders its choices. This is the main difference from dynamic programming, which is exhaustive and is guaranteed to find the solution. After every stage, dynamic programming makes decisions based on all the decisions made in the previous stage, and may reconsider the previous stage's algorithmic path to solution.
+
+__positional notation:__  
+`positional notation` is a numeral system in which the position of a digit in a number determines its value. In the more commonly used decimal positional notation, the value of a digit depends on its position relative to other digits. Each digit is multiplied by an integer power of 10, so that the absolute value of a digit's coefficient is the value of the digit multiplied by the weight of its position. The value of the number is then the sum of the coefficients of each digit multiplied by its respective power of 10.
+ex: 123 = 1*10^2 + 2*10^1 + 3*10^0
+ex of other positional notation: binary, octal, hexadecimal, ...
+
+__space complexity:__  
+ 
+`space comlexity = input size + auxilary space`
+
+- auxilary space: the space required by the algorithm, not including space taken up by the inputs
+- input size: the size of the input
+ex: 
+```c++
+    //Sum Of N Natural Number
+    int sum(int n)
+    {
+     int i,sum=0;
+     for(i=n;i>=1;i--)
+     sum=sum+i
+     return sum;
+    }
+```
+So in the above example input value is 'n' that is constant which will take the space of O(1). Now what about auxiliary space, so it is also O(1) becuase 'i' and 'sum' are also constants. Hence total space complexity is O(1).
+Example 2: Sum of all elements in an array
+```python
+    function sum_of_numbers(arr[],N){
+        sum=0
+        for(i = 0 to N){
+        sum=sum+arr[i]
+        }
+        print(sum)
+    }
+```
+So here this time there is an algorithm to find the sum of all elements in the array. For that we are passing the array(arr[ ]) and the size of array(N) to the created function. So here,
+
+1. In array(arr) the size of array is "N" and each element will take "4bytes" so the space taken by "arr" will be "N * 4 bytes"
+2. "sum" variable stores the sum of all elements and it will take "4 bytes" of space.
+3. "i" variable is used to iterate over all the elements in the array and it will also take "4 bytes" of space.
+4. Now function call, initialisation of for loop and print function these all comes under the auxiliary space and lets assume these all will take combinely "4 bytes" of space.
+
+Hence, Total space complexity= (4*N + 12)bytes But these 12 bytes((2)+(3)+(4)) are constant so we will not consider it and after removing all the constants(4 from 4*N) we can finally say that this algo have a complexity of "O(N)".
+
+
+__This course is relevant to multiple Professional Certificates programs. Completing this course will count towards the completion of any of the following programs:__  
+
+[Meta Android Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-android-developer)
+
+[Meta iOS Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-ios-developer)
+
+[Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer)
+
+[Meta Back-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-back-end-developer)
+
+[Meta Database Engineer Professional Certificate](https://www.coursera.org/professional-certificates/meta-database-engineer)
