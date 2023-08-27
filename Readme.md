@@ -79,8 +79,11 @@ Some hash algorithms are: `MD5`, `SHA-1`, `SHA-2`, `SHA-3`, ...
 
 __Heaps:__  
 A heap is a tree-based data structure in which all the nodes of the tree are in a specific order. There can be two types of heaps: `max heap` or `min heap`. In a max heap, the key present at the root node must be the greatest among all the keys present at all of the nodes of the tree. The same rule must be recursively true for all sub-trees in that Binary Tree. The node at the top of the heap with no parents is called the root node. The heap is always a complete binary tree. A complete binary tree is a binary tree in which all the levels of the tree are fully filled, except possibly the last level. To build a heap, we can use an array. The root element will be at Arr[0]. Below table shows indexes of other nodes for the ith node, i.e., Arr[i]:
+
 <img src="./Assets/heap-1.png" >
+
 img above is a binary tree
+
 <img src="./Assets/heap-2.png" >
 
 some methods that are used to manipulate heaps are: `insert`, `delete`, `extractMax`, `extractMin`, `getMax`, `getMin`, `heapify`, `heapSort`.
@@ -97,6 +100,9 @@ A graph is a data structure that consists of a finite set of nodes (or vertices)
 __sorting algorithms:__  
 8 classical sorting algorithms: bubble sort, insertion sort, selection sort, shell sort, heap sort, merge sort, quick sort, counting sort.
 Efficient sorts: heapsort, quicksort, merge sort,..
+
+Reference:
+
 [8 Classical Sorting Algorithms](https://wenfeng-gao.github.io/post/8-classical-sorting-algorithms/)
 
 [Sorting Algorithms in medium](https://medium.com/@bill.shantang/8-classical-sorting-algorithms-d048eec3fdab)
