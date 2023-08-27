@@ -87,3 +87,40 @@ A graph is a data structure that consists of a finite set of nodes (or vertices)
 -> shortest path: Dijkstra's algorithm, Bellman-Ford algorithm, Floyd-Warshall algorithm, Johnson's algorithm, A* search algorithm, breadth-first search, depth-first search, ...
 
 <img src="./Assets/graph-1.png">
+
+__sorting algorithms:__  
+8 classical sorting algorithms: bubble sort, insertion sort, selection sort, shell sort, heap sort, merge sort, quick sort, counting sort.
+Efficient sorts: heapsort, quicksort, merge sort,..
+[8 Classical Sorting Algorithms](https://wenfeng-gao.github.io/post/8-classical-sorting-algorithms/)
+
+[Sorting Algorithms in medium](https://medium.com/@bill.shantang/8-classical-sorting-algorithms-d048eec3fdab)
+
+__searching algorithms:__  
+Linear search, binary search, jump search, interpolation search, exponential search, Fibonacci search, ...
+
+__devide and conquer:__  
+There are two main steps in the divide and conquer approach:
+- Divide the problem into a number of subproblems(segments) that are smaller instances of the same problem.
+- Conquer the subproblems by solving them recursively. If they are small enough, solve the subproblems as base cases.
+- Combine the solutions to the subproblems into the solution for the original problem.(optional)
+Benefits of divide and conquer:
++ parallelism: when you have diffrent threads that are working on the same problem ,same time to complete in quicker time, you can divide the problem into subproblems and assign each thread to work on a subproblem. This is called parallelism.
+
+__recursion:__  
+there are 3 requirements for implementing a recursive solution
+- base case: the condition that stops the recursion
+- Diminishing: the condition that makes the problem smaller, bringing it closer to the base case
+- Recursive call: the function call that brings the problem closer to the base case
+
+__dynamic programming:__  
+`Dynamic programming` is a programming paradigm that promotes solving problems by breaking them into smaller problems and solving these. The solutions are then stored in an appropriate data structure for later use.
+
+`memoization`: The technique of solving sub problems and storing them to save time on a potential future look up
+
+The dynamic programming approach, is commonly applied to combination or optimization problems
+ex: knapsack problem, traveling salesman problem, longest common subsequence, longest increasing subsequence, ...
+
+`knapsack problem `is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
+
+__greedy algorithms:__  
+`Greedy algorithms` are algorithms that make the locally optimal choice at each step. The choice made by a greedy algorithm may depend on choices made so far, but not on future choices or all the solutions to the subproblem. It iteratively makes one greedy choice after another, reducing each given problem into a smaller one. In other words, a greedy algorithm never reconsiders its choices. This is the main difference from dynamic programming, which is exhaustive and is guaranteed to find the solution. After every stage, dynamic programming makes decisions based on all the decisions made in the previous stage, and may reconsider the previous stage's algorithmic path to solution.
